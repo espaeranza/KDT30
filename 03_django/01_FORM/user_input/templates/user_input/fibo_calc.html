@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>피보나치수열 계산기</h1>
+
+<p>
+  {% for num in fibo_calcs%}
+  <li>{{ num }}</li>
+  {% endfor %}
+</p>
+
+{% endblock content %}

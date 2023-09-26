@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- action 뒤에 form을 보내는 목적지를 설정-->
+<form action="/user_input/pong/"> 
+  <p>
+    <label for="username">Username: </label>
+    <input type="text" id="username" name="username">
+  </p>
+
+  <p>
+    <label for="password">Password: </label>
+    <input type="password" id="password" name="password">
+  </p>
+
+  <p>
+    <input type="submit" value="전송!">
+    <button>승인!</button>
+  </p>
+
+</form>
+
+{% endblock content %}

@@ -1,0 +1,17 @@
+{% extends "base.html"%}
+
+{% block content %}
+
+<form action="/user_input/fibo_calc/">
+  <p>
+    <label for="fibo">범위를 설정해주세요</label>
+    <input type="num" id="fibo" name="fibo">
+  </p>
+
+  <p>
+    <input type="submit" value="계산!">
+  </p>
+
+</form>
+
+{% endblock content %}
